@@ -1,0 +1,84 @@
+@colorFontButton: white;
+@colorItemMenu: #f88736;
+@fontRoboto: 'Roboto', sans-serif;
+@colorBackgroundMenu: #3f3e3e;
+@colorBtnPrimary: #7abffb;
+
+@import "https://fonts.googleapis.com/css?family=Roboto";
+
+body {
+	margin: 0 auto;
+	font-family: @fontRoboto;
+}
+#app {
+	padding: 10px;
+	position: relative;
+	margin-top: 18px;
+}
+.top-navigation {
+	width: 100%;
+	position: fixed;
+	background-color: @colorBackgroundMenu;
+	height: 42px;
+	top: 0;
+	z-index: 10;
+	i {
+		color: @colorFontButton;
+		font-size: 29px;
+	}
+	.fa-arrow-left {
+		float: left;
+		margin-left: 10px;
+		margin-top: 4px;
+	}
+	.fa-arrow-right {
+		float: right;
+		margin-right: 10px;
+		margin-top: 5px;
+	}
+}
+ul.bottom-navigation {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	display: inline-flex;
+	list-style-type: none;
+	padding: 0px;
+	background-color: @colorBackgroundMenu;
+	height: 65px;
+	margin: 0;
+	height: 57px;
+}
+.bottom-navigation {
+	li {
+		width: inherit;
+		text-align: center;
+		padding: 4px;
+		color: @colorFontButton;
+		font-size: 12px;
+		i {
+			font-size: 32px;
+			margin-bottom: 2px;
+		}
+	}
+	a {
+		cursor: pointer;
+		display: block;
+	}
+	li.active {
+		color: @colorItemMenu;
+	}
+}
+.form-control {
+	height: 30px;
+	border: 1px solid #bbbbbb;
+	border-radius: 5px;
+	padding: 5px;
+}
+.btn.primary {
+	height: 31px;
+	border: 1px solid #70a3ff;
+	background-color: @colorBtnPrimary;
+	border-radius: 5px;
+	color: @colorFontButton;
+}

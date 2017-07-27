@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Desafio front-end - Stone</title>
+</head>
+
+<body>
+    <div class="top-navigation">
+        <i onclick="window.history.go(-1)" class="fa fa-arrow-left" aria-hidden="true"></i>
+        <i onclick="window.history.go(1)" class="fa fa-arrow-right" aria-hidden="true"></i>
+    </div>
+    <div id="app">
+
+    </div>
+    <ul class="bottom-navigation">
+        <li class="active">
+            <a to="/">
+                <i class="fa fa-home icon-menu" aria-hidden="true"></i><br> Page 1
+            </a>
+        </li>
+        <li>
+            <a to="/page2">
+                <i class="fa fa-cog icon-menu" aria-hidden="true"></i><br> Page 2
+            </a>
+        </li>
+        <li>
+            <a to="/page3">
+                <i class="fa fa-user-circle-o icon-menu" aria-hidden="true"></i><br> Page 3
+            </a>
+        </li>
+    </ul>
+
+    <script src="dist/bundle.js"></script>
+</body>
+
+</html>
